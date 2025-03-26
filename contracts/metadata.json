@@ -1,0 +1,157 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "stokvelAddress",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "creator",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "contributionAmount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "maxMembers",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "payoutTimeframe",
+						"type": "string"
+					}
+				],
+				"name": "StokvelCreated",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_contributionAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_maxMembers",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_payoutTimeframe",
+						"type": "string"
+					}
+				],
+				"name": "createStokvel",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getStokvels",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "stokvels",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/StokvelFactory.sol": "StokvelFactory"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Stokvel.sol": {
+			"keccak256": "0x6333cbb39e317fa26ef12464ce8a5dc39638e75fff3dfe3ed59cf6522830b038",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://b8278b9cc0f05f88ba6eb98b996c57d694e00dc28f61ea7fcec1cacee70376a8",
+				"dweb:/ipfs/QmPMuUEG69tybQZL5hRqAx9GpeT8SmE4B6hiEbfNzAAJGh"
+			]
+		},
+		"contracts/StokvelFactory.sol": {
+			"keccak256": "0x616c455842cba806aa6b4c8ee1d23492337f1eba1d49013fd7b0cd4b45f9a130",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://37d28c72e6f9f1a6227a2b63feee42e257fbbf4f1ec30570d7ee855c5b7390bc",
+				"dweb:/ipfs/QmSuNDfobsDikZxdvzFAxgeUq69ejHaQLwVgrQkVbHmsbv"
+			]
+		}
+	},
+	"version": 1
+}
