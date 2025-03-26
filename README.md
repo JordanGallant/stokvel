@@ -5,9 +5,10 @@ Digistok is revolutionizing stokvels by adding more transparency and leveraging 
 ## Repository Structure
 This repository is divided into three main parts:
 
-1. **Contracts** - Smart contracts that handle the core functionalities of Digistok.
-2. **Indexer** - An Envio indexer that creates a GraphQL API to pull on-chain data for the frontend.
-3. **Client** - A frontend application built with Next.js to interact with the system.
+1.  **Client** - A frontend application built with Next.js to interact with the system.
+2. **Contracts** - Smart contracts that handle the core functionalities of Digistok.
+3. **Indexer** - An Envio indexer that creates a GraphQL API to pull on-chain data for the frontend.
+  
 
 ## Getting Started
 
