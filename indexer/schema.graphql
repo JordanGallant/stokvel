@@ -1,0 +1,10 @@
+type StokvelFactory_StokvelCreated {
+  id: ID!
+  stokvelAddress: String!
+  creator: String!
+  contributionAmount: BigInt!
+  name: String!
+  maxMembers: BigInt!
+  payoutTimeframe: String!
+}
+

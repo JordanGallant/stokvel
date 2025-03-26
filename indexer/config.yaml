@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+name: indexer
+networks:
+- id: 10143
+  start_block: 0
+  contracts:
+  - name: StokvelFactory
+    address:
+    - 0x5e03F969841CA23f4D3f79a0c3Ea0590593C8E7c
+    handler: src/EventHandlers.ts
+    events:
+    - event: StokvelCreated(address indexed stokvelAddress, address indexed creator, uint256 contributionAmount, string name, uint256 maxMembers, string payoutTimeframe)
+unordered_multichain_mode: true
